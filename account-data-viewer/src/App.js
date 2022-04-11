@@ -3,11 +3,6 @@ import { Connection, clusterApiUrl, PublicKey } from '@solana/web3.js';
 import './App.css';
 import { extendBorsh } from './borsh'
 import { getStreamData } from './schema';
-import {
-  getProvider,
-  depositNativeToken,
-  initNativeTransaction
-} from "zebecprotocol-sdk";
 
 function App() {
   const [address, setAddress] = useState("");
@@ -29,7 +24,7 @@ function App() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (address === "") return;
+    if (!address) return;
 
     getStreamData(conn, new PublicKey(address))
       .then(response => {

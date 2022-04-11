@@ -1,7 +1,4 @@
-// import { Connection, PublicKey, } from "@solana/web3.js";
 import { deserializeUnchecked } from "borsh";
-
-
 
 // src: https://solanacookbook.com/guides/serialization.html#how-to-deserialize-account-data-on-the-client
 
@@ -36,7 +33,6 @@ const streamSchema = new Map([
         }
     ]
 ]);
-
 
 
 // src: https://solanacookbook.com/guides/serialization.html#how-to-deserialize-account-data-on-the-client
