@@ -16,9 +16,9 @@ function App() {
     setText(data.slice(0, amount));
   }
   return (
-    <section className='section-center'>#
+    <section className='section-center'>
       <h3>tired of boring lorem ipsum?</h3>
-      <form className='lorem-form' onSubmit={handleSubmit}>
+      <form className='address-form' onSubmit={handleSubmit}>
         <label htmlFor='amount'>
           paragraphs:
         </label>

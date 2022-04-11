@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Buffer } from 'buffer'
 
-window.Buffer = Buffer;
+window.Buffer = Buffer
 ReactDOM.render(
   <React.StrictMode>
     <App />
